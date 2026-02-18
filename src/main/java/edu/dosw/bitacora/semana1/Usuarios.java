@@ -3,9 +3,9 @@ package edu.dosw.bitacora.semana1;
 public class Usuarios {
     private String nombre;
     private String id;
-    private String edad;
+    private int edad;
     private boolean activo;
-    public Usuarios(String nombre, String id, String edad, boolean activo) {
+    public Usuarios(String nombre, String id, int edad, boolean activo) {
         this.nombre = nombre;
         this.id = id;
         this.edad = edad;
@@ -23,10 +23,10 @@ public class Usuarios {
     public void setId(String id) {
         this.id = id;
     }
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
     public boolean isActivo() {

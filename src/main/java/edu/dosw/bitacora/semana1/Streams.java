@@ -39,6 +39,7 @@ public class Streams {
     }
 
     /**
+     * Ejercicio 3:
      * Dada una lista de usuarios, Filtra unicamente los usuarios activos,
      * obten una lista con los nombres en mayuscula y ordena alfabeticamente el resultado,
      * el objeto usuario cuenta con los atributos:
@@ -55,5 +56,41 @@ public class Streams {
                 .sorted()
                 .toList();
         return resultado;
+    }
+
+    /**
+     * Ejercicio 4:
+     * Dado un listado de Usuarios y utilizando los mismos
+     * atributos anteriores, filtrar las personas mayores de edad y obtener sus nombres.
+     */
+    public List<String> nombresMayoresDeEdad(List<Usuarios> usuarios){
+        List<String> resultado = usuarios.stream()
+                .filter(e -> e.getEdad() >= 18)
+                .map(e->e.getNombre())
+                .toList();
+        return resultado;
+    }
+
+    /**
+     * Dada una lista de transacciones bancarias representadas por objetos:
+     * class Transaction {
+     *     String id;
+     *     double amount;
+     *     boolean approved;
+     * }
+     * Se requiere procesar la lista usando Streams para:
+     * Usar peek para ver cada transacción procesada (Utilizar System.out.println para ver la transaccion)
+     * Verificar si existe al menos una transacción no aprobada
+     * Retornar true o false indicando si el lote de transacciones es válido.
+     */
+    public boolean verTransaccion(List<Transaccion> transacciones){
+        List<String> resultados = transacciones.stream()
+                .map(t -> t.isApproved())
+                .peek(t -> System.out.println("Transaccion "+ t))
+                .toList();
+
+        boolean aprovadas = resultados.stream()
+                .allMatch(t->t == "APROVADA");
+        return aprovadas;
     }
 }
