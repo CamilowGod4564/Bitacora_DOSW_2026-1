@@ -28,6 +28,8 @@ muñeco.
 ### Adapter - Gasolineria Inteligente
 ![](./docs/Semana3/Adapter.png)
 
+
+
 ### Bridge - Figuras y Colores
 ![](./docs/Semana3/Bridge.png)
 
@@ -40,13 +42,35 @@ muñeco.
 ### Decorador - Simulador de batalla naval
 ![](./docs/Semana3/Decorator.png)
 
+Para este ejercicio reforce el concepto de encapsulamiento, ya que en este un objeto base 
+como el barco, se encapsula de acuerdo a lo que quiera el cliente, asi pues se agregan 
+mas atributos y metodos incluso el mismo varias veces.
+
 ### Chain of responsability - Embajada de estados unidos
+![](./docs/Semana3/ChainOfResponsability.png)
+
+Aca se comprende un poco la idea de como pasar entre controladores, a manejar un poco mejor los condicionales.
+
 ### Command - Personajes de videojuegos
+![](./docs/Semana3/Command.png)
+
 ### Iterator - Viaje a roma (diagrama)
 ### Strategy - Aplicacion de navegacion
+![](./docs/Semana3/Strategy.png)
+
 
 ## PREGUNTAS FINALES
 
 - ¿Qué entendía mal antes?
+
+Antes sentia que los patrones de diseño son un tema demasiado extenso y dificil de comprender,
+que cada patron tiene su forma de ser y aprenderselos seria algo muy complicado.
 - ¿Qué entiendo ahora?
+
+Entiendo que los patrones si son un tema extenso, pero con practica se sabe que todos 
+respetan los principios SOLID, por lo que no van tan dispersos, tienen su propia logica 
+pero la mayoria implementa interfaces comunes y abstracciones respetando su integridad.
+
 - ¿Qué me falta reforzar?
+
+Me falta reforzar los demas patrones de diseño no vistos aca y que sean un poco más complejos de entender.
