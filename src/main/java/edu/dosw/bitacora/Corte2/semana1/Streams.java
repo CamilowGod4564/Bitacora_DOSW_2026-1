@@ -41,7 +41,7 @@ public class Streams {
      Retornar por estudiante el primedio por materia -> Retornar un Map<String, Double> donde la clave es
      la materia y el valor el promedio
      */
-   
+
     /**
      Retornar el estudiante cuyo promedio general sea el mas alto del curso
      */
